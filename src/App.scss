@@ -1,7 +1,16 @@
 $boxShadowColor: #bbbaac;
 $backgroundColor: #ffffff;
 .App {
-  width: 400px;
+  width: 600px;
+  margin: 48px auto;
+  display: block;
+  padding: 24px;
+  background-color: $backgroundColor;
+  box-shadow: 0px 0px 4px 6px $boxShadowColor;
+  border-radius: 12px;
+}
+.MyChild {
+  width: 600px;
   margin: 48px auto;
   display: block;
   padding: 24px;

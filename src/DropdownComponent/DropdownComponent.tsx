@@ -2,17 +2,21 @@ import React from "react";
 import styles from "./DropdownComponent.module.scss";
 import countries from "./Dropdowndata.json";
 
-export interface DropdownComponentProps {}
+export interface DropdownComponentProps {
+  label: string;
+
+}
 
 export interface DropdownComponentState {
   value: string;
   countries: any;
+  showState: boolean;
 }
 
 export default class DropdownComponent extends React.Component<
   DropdownComponentProps,
   DropdownComponentState
-> {
+  > {
   constructor(props: DropdownComponentProps) {
     super(props);
     this.state = {
@@ -22,12 +26,26 @@ export default class DropdownComponent extends React.Component<
         { id: "2", country: "Australia" },
         { id: "3", country: "US" },
       ],
+      showState: false,
     };
   }
+
+
+  ListItemOpenHandler = () => {
+    this.setState({
+      showState: true,
+    });
+  };
+  ListItemCloseHandler = (e: any) => {
+    this.setState({
+      showState: false,
+    });
+    console.log(e.target.innerHTML);
+  };
   render() {
     return (
       <div data-testid="DropdownComponent">
-        <label>
+        <div>
           <select className={styles.DropdownComponent}>
             {countries.countries.map((item: any, index: number) => (
               <option
@@ -41,7 +59,8 @@ export default class DropdownComponent extends React.Component<
             ))}
             {console.log(countries.countries.map((el: any) => el.name))}
           </select>
-        </label>
+        </div>
+
       </div>
     );
   }

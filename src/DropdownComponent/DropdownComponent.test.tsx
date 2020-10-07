@@ -5,8 +5,8 @@ import DropdownComponent from './DropdownComponent';
 
 describe('<DropdownComponent />', () => {
   test('it should mount', () => {
-    render(<DropdownComponent />);
-    
+    render(<DropdownComponent label="Services" />);
+
     const dropdownComponent = screen.getByTestId('DropdownComponent');
 
     expect(dropdownComponent).toBeInTheDocument();

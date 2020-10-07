@@ -2,19 +2,19 @@ import React from "react";
 import styles from "./ButtonComponent.module.scss";
 //import countries from "./Data.json";
 
-export interface ButtonComponentProps {
+export interface IButtonComponentProps {
   label: string;
 }
-export interface ButtonComponentState {
+export interface IButtonComponentState {
   services: any;
   showState: boolean;
 }
 
 export default class ButtonComponent extends React.Component<
-  ButtonComponentProps,
-  ButtonComponentState
+  IButtonComponentProps,
+  IButtonComponentState
   > {
-  constructor(props: ButtonComponentProps) {
+  constructor(props: IButtonComponentProps) {
     super(props);
     this.state = {
       services: [
@@ -40,7 +40,7 @@ export default class ButtonComponent extends React.Component<
   render() {
     const { services } = this.state;
     return (
-      <div data-testid="ButtonComponent" className={styles.container}>
+      <div data-testid="ButtonComponent">
         <button
           className={styles.DropdownComponent}
           onClick={this.ListItemOpenHandler}
@@ -68,7 +68,7 @@ export default class ButtonComponent extends React.Component<
             </a>
           </div>
         ) : (
-            "")}
+            " ")}
         {console.log(services.map((el: any) => el.name))}
       </div>
     );

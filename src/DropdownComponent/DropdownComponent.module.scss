@@ -10,8 +10,20 @@
   display: block;
   font-weight: 500px;
 }
+.DropdownComponent:hover {
+  box-shadow: 0px 0px 2px 8px #1a1f71;
+  background-color: #1a1f71;
+}
 
 .itemOptions {
   color: white;
   background-color: #1a1f71;
+}
+
+.itemOption {
+  color: #ffffff;
+  margin: 0px auto;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
 }

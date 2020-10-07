@@ -5,7 +5,7 @@ import MyChild from "./myChild";
 
 describe("<myChild />", () => {
   test("it should mount", () => {
-    render(<MyChild />);
+    render(<MyChild label="Services" />);
 
     const myChild = screen.getByTestId("myChild");
 

@@ -1,5 +1,55 @@
-$primaryColor: #abcdef;
-
 .myChild {
-    background-color: #abcded;
+    width: 550px;
+    height: 60px;
+    background-color: #1a1f71;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 12px;
+    border: none;
+    margin: 0px auto;
+    display: block;
+    outline: none;
+}
+.myChild:hover {
+    box-shadow: 0px 0px 2px 8px #1a1f71;
+    background-color: #1a1f71;
+}
+input {
+    width: 512px;
+    outline: none;
+    border-radius: 12px;
+    background: whitesmoke;
+    border: 6px solid whitesmoke;
+    box-shadow: inset 8px 8px 8px white, inset -8px -8px 8px white;
+    padding: 12px;
+}
+.itemOptions {
+    background: #1a1f71;
+    color: #1a1f71;
+    margin: 12px auto;
+    display: block;
+    border: 2px solid #1a1f71;
+    border-radius: 8px;
+    width: 550px;
+    box-shadow: 0px 0px 0px 4px #1a1f71;
+}
+.itemOption {
+    color: #ffffff;
+    margin: 0px auto;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.itemOption:hover {
+    background-color: #0275d8;
+    box-shadow: 0px 0px 0px 4px #0275d8;
+    margin: 8px;
+}
+
+.itemOption:active {
+    box-shadow: inset 0px 0px 0px 4px #1a1f71, inset 0px 0px 2px 6px #fff;
+    background-color: #1a1f71;
+    width: 520px;
+    margin: 4px;
 }
