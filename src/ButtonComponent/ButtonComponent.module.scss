@@ -1,0 +1,46 @@
+.container {
+  justify-content: space-between;
+}
+
+.DropdownComponent {
+  width: 100px;
+  height: 100px;
+  background-color: #1a1f71;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 50%;
+  border: none;
+  margin: 0px auto;
+  display: block;
+  outline: none;
+}
+
+.itemOptions {
+  background: #1a1f71;
+  color: #1a1f71;
+  margin: 4px auto;
+  display: block;
+  border: 2px solid #1a1f71;
+  border-radius: 8px;
+  width: 152px;
+}
+
+.itemOption {
+  color: #ffffff;
+  margin: 0px auto;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.itemOption:hover {
+  background-color: #0275d8;
+}
+
+.itemOption:active {
+  box-shadow: inset 0px 0px 1px 2px white;
+  background-color: #1a1f71;
+  width: 120px;
+  margin-bottom: 4px;
+}
